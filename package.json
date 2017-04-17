@@ -1,0 +1,30 @@
+{
+  "name": "currencyconvertor",
+  "version": "1.0.0",
+  "description": "Currency convertor",
+  "main": "CurrencyConvertor.html",
+  "scripts": {
+    "test": "npm run scss-compile",
+    "scss-compile": "node-sass app/css -o app/css --output-style compressed -q",
+    "watch": "npm run scss-compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sairam1912/CurrencyConvertor.git"
+  },
+  "keywords": [
+    "currency",
+    "convertor"
+  ],
+  "author": "sxm8657",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sairam1912/CurrencyConvertor/issues"
+  },
+  "homepage": "https://github.com/sairam1912/CurrencyConvertor#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7",
+    "requirejs": "^2.3.3"
+  }
+}

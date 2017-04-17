@@ -1,0 +1,46 @@
+
+$grey: #E4E4E4
+
+@mixin inline-block
+  display: inline-block
+
+body
+    margin: 10% auto
+    float: none !important
+
+.blockUI
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 1
+    background: black
+    opacity: 0.3
+    top: 0
+    left: 0
+
+.appContainer
+    padding: 8%
+    border: 1px solid black
+
+.selectBox
+    width: 30%
+    padding-left: 5px
+    background: $grey
+    @include inline-block
+
+.textBox
+    width: 60%
+    @include inline-block
+
+.disclaimer
+    text-align: right
+
+.disclaimer
+  a
+    color: blue
+    text-decoration: underline
+    cursor: pointer
+
+.disclaimerContent
+    margin: 5px;
+    color: cadetblue

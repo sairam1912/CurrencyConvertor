@@ -1,0 +1,28 @@
+<div>
+    <div class="appContainer">
+        <div class="blockUI" ng-show="isLoading"></div>
+        <h3>Currency Converter</h3>
+        <div>
+            <label>Type in amount and select currency:</label>
+        </div>
+        <div class="form-group">            
+            <input class="textBox form-control" type="text" placeholder="0.00" ng-model="fromValue" ng-change="convert()" numbers-only>
+            <select class="selectBox form-control" ng-model="selection.fromType" ng-change="convert()" ng-options="rateValue as rateType for (rateType , rateValue) in rates">
+                </select>
+        </div>
+        <div>
+            <label>Converted amount:</label>
+        </div>
+        <div class="form-group">
+            <input class="textBox form-control" type="text" ng-model="toValue" ng-disabled="true">
+            <select class="selectBox form-control" ng-model="selection.toType" ng-change="convert()" ng-options="rateValue as rateType for (rateType , rateValue) in rates">
+                </select>
+        </div>
+        <div class="disclaimer">
+            <a ng-click="toggleDisclaimer()">Disclaimer</a>
+        </div>
+        <div class="disclaimerContent" ng-show="disclaimer">
+            The exchange rate shown is calculated using http://api.fixer.io/. The rate may vary from time to time. This should be used as a guide only.
+        </div>                    
+    </div>
+</div>
