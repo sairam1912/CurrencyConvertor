@@ -2,7 +2,7 @@
 
 This is a responsive application which can be viewed in desktops, tablets and mobiles. This is developed using anguarJS and bootstrap. We are using JSON API from http://fixer.io/ to get the currency rates.
     
-# Functionalities
+## Functionalities
 User can choose between the following currencies: CAD, USD, EUR
 
 User can type in the required amount in original currency, and instantly see the converted result in selected output currency
