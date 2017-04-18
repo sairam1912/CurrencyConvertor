@@ -1,3 +1,6 @@
+/*
+This file contains all the directive used in this application
+*/
 define(['appModule'], function(currencyConverter){
     'use strict';
     // This directive is to allow only number and dot into the fromValue text box.

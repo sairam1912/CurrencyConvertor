@@ -1,16 +1,18 @@
+/*
+This file contains all the facotry/service fucntions used in this application
+*/
 define(['appModule'], function(currencyConverter){
     'use strict';
     currencyConverter.factory("converterService", function($http) {
         var services = {};
-        services.getRates = function(){
+        services.getRates = function(callback){
             $http.get('http://api.fixer.io/latest?base=INR&symbols=USD,CAD,EUR')
                 .then(function(res) {
-                    return res;            
+                    return callback(res);            
                 }, function(){
-                    return false;
-            });
+                    return callback(false);
+                });
         };
         return services;
-    // Invoking fixer API on load to get the currency rates for USD, CAD and EUR
  });   
 });
