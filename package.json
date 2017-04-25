@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/sairam1912/CurrencyConvertor#readme",
   "dependencies": {
-    "angular": "^1.6.4",
+    "angular": "^1.6.6",
     "bootstrap": "^3.3.7",
     "requirejs": "^2.3.3"
   }
